@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  /*background-color: #ffeaf1;*/
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+button {
+	position: absolute;
+	right: 10%;
+	display: block;
+	width: 15%;
+	height: 10%;
+  border: none;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 0.5rem;
+  opacity: 0.6;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button#btn-happy {
+	top: 43%;
+  background-color: #eb584d;
+}
+button#btn-happy:hover {
+	opacity: 1;
+  background-color: #e62d1f;
+}
+button#btn-cool {
+	top: 53%;
+  background-color: #007185;
+}
+button#btn-cool:hover {
+	opacity: 1;
+  background-color: #004652;
+}
+button#btn-sexy {
+	top: 63%;
+  background-color: #e5004e;
+}
+button#btn-sexy:hover {
+	opacity: 1;
+  background-color: #b2003d;
+}
+button#btn-crazy {
+	top: 73%;
+  background-color: #883277;
+}
+button#btn-crazy:hover {
+	opacity: 1;
+  background-color: #632456;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+button:focus {
+  outline: none;
+  border: 0;
+}

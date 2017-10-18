@@ -1,0 +1,31 @@
+@charset "utf-8";
+/************************主体*************************/
+main{margin-bottom:100px;
+	}
+
+ol{display:block;width:420px; margin:0 auto ;padding:0px; }
+@media only screen and (min-width: 840px) {
+	ol{display:block;width:840px; margin:0 auto ;padding:0px ;}
+}
+@media only screen and (min-width: 1260px) {
+	ol{display:block;width:1260px; margin:0 auto ;padding:0px ;}
+}
+ol.picture{display: block;/*padding-bottom: 50px;*/border: 20px solid salmon;}
+li.box{display:block;width:420px;height:230px;/*padding:5px;border:2px solid white;*/position:relative;overflow:hidden;float:left;}
+
+/*li.box:hover{border:2px solid #F09;
+	         cursor:crosshair;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;}*/
+
+div.border1{width:420px;height:230px;padding:0;margin:0;/*border:1px solid #a40c0c;*/position:absolute;overflow:hidden;}
+div.border2{width:420px;height:230px;padding:0;margin:0;/*border:1px solid #a40c0c;*/position:absolute;overflow:hidden;}
+
+img.border2_img{display:block;opacity:0;padding:0;margin:0;-webkit-transition:all 0.8s ease-in-out;}
+img.border2_img:hover{opacity:1;}
+
+/************************主体结束*************************/
+
