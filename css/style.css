@@ -7,6 +7,8 @@
 body{background:url(../images/icon/main-bg.png) repeat repeat;}
 nav{position: relative;width:100%;margin-bottom: 1%;height: 15%;}
 
+.page{overflow: hidden;}
+
 .logo{position: absolute;background-repeat:no-repeat;background-size:contain;background-position:center center;top: 0;width: 10%;height: 100%;}
 #logo01{background-image: url(../images/icon/logo01.png);left: 0;margin-left: -10%;}
 #logo02{background-image: url(../images/icon/logo02.png);right: 0;margin-right: -10%;}
