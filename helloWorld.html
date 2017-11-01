@@ -19,7 +19,8 @@
 <!--视差-->	
 <link rel="stylesheet" type="text/css" href="css/parallax.css"/>
 <!--rain--><!--通过iframe调用.html-->
-<link rel="stylesheet" type="text/css" href="css/rain-iframe.css"/>
+<link rel="stylesheet" type="text/css" href="css/city.css"/>
+<link rel="stylesheet" type="text/css" href="css/iframe.css"/>
 
 
 <!--主jquery-1.9.0--> 
@@ -36,7 +37,7 @@
 
 
 <style>
-.page4 { background-color: #f90;opacity: 0.3;}
+.page4 { background-color: #FBE1CB;}
 </style>
 
 </head>
@@ -163,19 +164,19 @@
 		<div class="page page2">
 			<!--devil视差-->
 			<ul id="devil" class="devil">
-				<li class="layer" data-depth="0.00"><img src="images/devil/di.png"></li>
-				<li class="layer" data-depth="0.2"><img src="images/devil/face.png"></li>
-				<li class="layer" data-depth="0.26"><img src="images/devil/eay.png"></li>
-				<li class="layer" data-depth="0.26"><img src="images/devil/mouse.png"></li>	
-				<li class="layer" data-depth="0.26"><img src="images/devil/earl.png"></li>							
-				<li class="layer" data-depth="0.26"><img src="images/devil/earr.png"></li>
-				<li class="layer" data-depth="0.42"><img src="images/devil/flash2.png"></li>
-				<li class="layer" data-depth="0.42"><img src="images/devil/flash1.png"></li>
-				<li class="layer" data-depth="0.62"><img src="images/devil/ba.png"></li>
-				<li class="layer" data-depth="0.62"><img src="images/devil/you.png"></li>
-				<li class="layer" data-depth="0.7"><img src="images/devil/xian.png"></li>
-				<li class="layer" data-depth="0.65"><img src="images/devil/shan1.png"></li>
-				<li class="layer" data-depth="0.65"><img src="images/devil/shan2.png"></li>
+				<li class="layer" data-depth="0.1"><img src="images/devil/di.png"></li>
+				<li class="layer" data-depth="0.1"><img src="images/devil/xian.png"></li>
+				<li class="layer" data-depth="0.2"><img src="images/devil/shan2.png"></li>
+				<li class="layer" data-depth="0.2"><img src="images/devil/shan1.png"></li>	
+				<li class="layer" data-depth="0.3"><img src="images/devil/face.png"></li>							
+				<li class="layer" data-depth="0.35"><img src="images/devil/earl.png"></li>
+				<li class="layer" data-depth="0.35"><img src="images/devil/earr.png"></li>
+				<li class="layer" data-depth="0.4"><img src="images/devil/eay.png"></li>
+				<li class="layer" data-depth="0.4"><img src="images/devil/mouse.png"></li>
+				<li class="layer" data-depth="0.36"><img src="images/devil/flash2.png"></li>
+				<li class="layer" data-depth="0.35"><img src="images/devil/flash1.png"></li>
+				<li class="layer" data-depth="0.4"><img src="images/devil/ba.png"></li>
+				<li class="layer" data-depth="0.4"><img src="images/devil/you.png"></li>
 			</ul>
 			<!--devil视差Scripts-->
 			<script>		
@@ -198,17 +199,16 @@
 		</div>
 		
 		<div class="page page3">
-			<iframe id="ifrain" frameborder="0" scrolling="no" src="special/rain/rain.html"></iframe>
-			<iframe id="ifflower" frameborder="0" scrolling="no" src="special/flower/flower.html"></iframe>				
+			<iframe id="ifrain" frameborder="0" scrolling="no" src="special/rain/rain.html"></iframe>			
 			<!--rain视差-->
-			<ul id="rain" class="rain">
-				<li class="layer rain-background" data-depth="0.2"></li>
-				<li class="layer rain-footer" data-depth="0.7"></li>
+			<ul id="city" class="city">
+				<li class="layer city-background" data-depth="0.4"></li>
+				<li class="layer city-footer" data-depth="0.7"></li>
 			</ul>
 			<!--rain视差Scripts-->
 			<script>		
 				// Yep, that's it!
-				$('#rain').parallax({
+				$('#city').parallax({
 					  calibrateX: false,
 					  calibrateY: false,
 					  invertX: false,
@@ -226,6 +226,7 @@
 		
 		
 		<div class="page page4">
+			<iframe id="ifflower" frameborder="0" scrolling="no" src="special/flower/flower.html"></iframe>
 		</div>
     </main>
     <footer>   		

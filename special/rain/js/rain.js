@@ -20,10 +20,10 @@ var demo = {
 	speed: 1,
 	// - color of particles
 	color: {
-		r: '220',
-		g: '255',
-		b: '137',
-		a: '1'
+		r: '57',
+		g: '53',
+		b: '51',
+		a: '0.4'
 	},
 	
 	// END CUSTOMIZATION
