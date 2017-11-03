@@ -18,9 +18,9 @@
 <link rel="stylesheet" href="css/accordion.css">
 <!--视差-->	
 <link rel="stylesheet" type="text/css" href="css/parallax.css"/>
-<!--rain--><!--通过iframe调用.html-->
+<!--city-->
 <link rel="stylesheet" type="text/css" href="css/city.css"/>
-<link rel="stylesheet" type="text/css" href="css/iframe.css"/>
+
 
 
 <!--主jquery-1.9.0--> 
@@ -31,14 +31,13 @@
 <script src="js/accordion.js"></script>
 <!--视差-->
 <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
-<!--rain--><!--通过iframe调用.html-->
+<!--city-->
 <!--全屏滚动nav联动-->
 <script src="js/navlogo.js" type="text/javascript" charset="utf-8"></script>
+<!--snow-->
+<script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+<script src="js/modernizr.js"></script>
 
-
-<style>
-.page4 { background-color: #FBE1CB;}
-</style>
 
 </head>
 
@@ -199,13 +198,39 @@
 		</div>
 		
 		<div class="page page3">
-			<iframe id="ifrain" frameborder="0" scrolling="no" src="special/rain/rain.html"></iframe>			
-			<!--rain视差-->
+			<!--snow-->
+
+	  	
+			<!--city-->
 			<ul id="city" class="city">
-				<li class="layer city-background" data-depth="0.4"></li>
-				<li class="layer city-footer" data-depth="0.7"></li>
+				<li class="layer main-bg" data-depth="0"></li>
+				<li class="layer city-middle" data-depth="0.3"></li>
+				<li class="layer cloud2" data-depth="0.5"></li>
+				<li class="layer city-front3" data-depth="0.7"></li>
+				<li class="layer cloud1" data-depth="0.9"></li>
+				<li class="layer city-front2" data-depth="1.1"></li>
+				<li class="layer city-front1" data-depth="1.5"></li>				
+				<li class="layer city-snow" data-depth="0.4"><canvas class="snow"></canvas></li>
 			</ul>
-			<!--rain视差Scripts-->
+			
+
+			<script type="text/javascript">
+				  $(document).ready( function() {
+						$("canvas.snow").let_it_snow({
+						    speed: 0,					//速度 0-5，默认0						    
+						    interaction: true,			//交互，默认true
+						    size: 3,					//平均大小0-10，默认2
+						    count: 400,					//count数量，默认200
+						    opacity: 0,					//平均透明度，0.0-1.0，默认0
+						    color: "#000008",			//颜色，默认"#ffffff"
+						    windPower: 0,				//风吹的方向，左向右为正，默认0
+						    image: false				//图片的URL，默认false
+						});
+				  });
+			</script>			
+			
+			
+			<!--city Scripts-->
 			<script>		
 				// Yep, that's it!
 				$('#city').parallax({
@@ -226,7 +251,7 @@
 		
 		
 		<div class="page page4">
-			<iframe id="ifflower" frameborder="0" scrolling="no" src="special/flower/flower.html"></iframe>
+
 		</div>
     </main>
     <footer>   		
