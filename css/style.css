@@ -5,30 +5,15 @@
 
 /**************************导航********************/
 body{background:url(../images/icon/main-bg.png) repeat repeat;}
-nav{position: relative;width:100%;/*margin-bottom: 1%;*/height: 16%;}
+nav{position: absolute;width:100%;/*margin-bottom: 1%;*/height: 16%;}
 
 .page{overflow: hidden;}
 
-.logo{position: absolute;background-repeat:no-repeat;background-size:contain;background-position:center center;top: 0;width: 10%;height: 100%;}
-#logo01{background-image: url(../images/icon/logo01.png);left: 0;margin-left: -10%;}
-#logo02{background-image: url(../images/icon/logo02.png);right: 0;margin-right: -10%;}
-#logo03{background-image: url(../images/icon/logo03.png);left: 0;margin-left: -10%;/*display: none;*/}
-#logo04{background-image: url(../images/icon/logo04.png);right: 0;margin-right: -10%;/*display: none;*/}
-#logo05{background-image: url(../images/icon/logo05.png);left: 0;margin-left: -10%;/*display: none;*/}
-#logo06{background-image: url(../images/icon/logo06.png);right: 0;margin-right: -10%;/*display: none;*/}
-#logo07{background-image: url(../images/icon/logo07.png);left: 0;margin-left: -10%;/*display: none;*/}
-#logo08{background-image: url(../images/icon/logo08.png);right: 0;margin-right: -10%;/*display: none;*/}
 
-nav ul{display: block;float: right;height: 100%;}
-nav ul li{display: block;float: right;}
-nav ul li a{display: block;}
-
-
-/**************************导航结束********************/
-
-
-
-
+.page1{background:url(../images/icon/bg1.png) repeat repeat;}
+.page2{background:url(../images/icon/bg2.png) repeat repeat;}
+.page3{background:url(../images/icon/bg3.png) repeat repeat;}
+.page4{background:url(../images/icon/bg4.png) repeat repeat;}
 
 
 
