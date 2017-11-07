@@ -5,34 +5,28 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>index</title>
+<title>pencil</title>
 <!--初始化-->
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
 <!--主CSS-->
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!--响应式-->
 <link rel="stylesheet" type="text/css" href="css/media.css" />
-<!--全拼滚动样式样式-->
+<!--全屏滚动样式样式-->
 <link rel="stylesheet" href="css/onepage-scroll.css" />
-<!--手风琴样式-->
-<link rel="stylesheet" href="css/accordion.css">
 <!--视差-->	
 <link rel="stylesheet" type="text/css" href="css/parallax.css"/>
 <!--city-->
 <link rel="stylesheet" type="text/css" href="css/city.css"/>
 <!--naruto-->
 <link rel="stylesheet" href="css/naruto.css"/>
-
-
+<!--dice-->
+<link rel="stylesheet" href="css/dice.css"/>
 
 <!--主jquery-1.9.0--> 
 <script src="js/jquery-1.9.0.min.js"></script>
 <!--全屏滚动-->
 <script src="js/jquery.onepage-scroll.min.js"></script>
-<!--全屏滚动nav联动-->
-<script src="js/onepage-switch.js" type="text/javascript" charset="utf-8"></script>
-<!--手风琴-->
-<script src="js/accordion.js"></script>
 <!--视差-->
 <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
 <!--city-->
@@ -42,107 +36,77 @@
 
 </head>
 
-<body ondragstart="return false" oncontextmenu="return false"> 
-	
+<body ondragstart="return false" oncontextmenu="return false">
+	<!--onepage启动-->
+	<script type="text/javascript">
+		$(function(){
+			$('main').onepage_scroll({
+				sectionContainer: '.page',
+				direction: 'horizontal',
+				animationTime: 500,
+		//		responsiveFallback: 600
+		//		pagination: false
+				loop: true,
+				updateURL: true,
+				beforeMove: function(index){
+							switch(index){
+								case 1:
+								case 2:
+								case 3:
+								case 4:
+							}
+						}
+		 
+					});
+				});		
+	</script>
     <main>
 		<div class="page page1">
-			<!--手风琴-->
-			<div class="accordion" id="accordion">
-				<ul class="ul-item">
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/1.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">╭(●｀∀´●)╯</p>
-								<div class="details"><p>你猜怎么着？</p></div>
-							</div>
-						</div>
-					</li>
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/2.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">(ฅ´ω`ฅ)</p>
-								<div class="details"><p>为了做这个网站，</p></div>
-							</div>
-						</div>
-					</li>					
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/3.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">（●´∀｀）♪</p>
-								<div class="details"><p>我度过了一个个不眠夜。</p></div>
-							</div>
-						</div>
-					</li>					
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/4.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">◔ ‸◔？</p>
-								<div class="details"><p>虽然网站没什么实际内容，</p></div>
-							</div>
-						</div>
-					</li>
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/5.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">(￢_￢)</p>
-								<div class="details"><p>在别人看来没什么难度，</p></div>
-							</div>
-						</div>
-					</li>
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/6.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">٩(๑`灬´๑)۶</p>
-								<div class="details"><p>但是为了初心！</p></div>
-							</div>
-						</div>
-					</li>
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/7.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">(ง •̀_•́)ง</p>
-								<div class="details"><p>我也会迎难而上。</p></div>
-							</div>
-						</div>
-					</li>					
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/8.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">٩(๑´0`๑)۶</p>
-								<div class="details"><p>近乎歇斯底里的追求，</p></div>
-							</div>
-						</div>
-					</li>					
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/9.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title"> (..•˘_˘•..)</p>
-								<div class="details"><p>精确到每一个PX，</p></div>
-							</div>
-						</div>
-					</li>
-					<li class="li-item">
-						<div class="item" style="background-image: url(images/accordion/10.jpg) ">
-							<div class="btn-play"></div>
-							<div class="info">
-								<p class="title">( ͡° ͜ʖ ͡°)</p>
-								<div class="details"><p>消灭每一个BUG。</p></div>
-							</div>
-						</div>
-					</li>						
-				</ul>
-			</div>		
-			<!--手风琴Scripts-->
-						
+			<!--city-->
+			<ul id="city" class="city">
+				<li class="layer main-bg" data-depth="0"></li>
+				<li class="layer city-middle" data-depth="0.3"></li>
+				<li class="layer cloud2" data-depth="0.5"></li>
+				<li class="layer city-front3" data-depth="0.7"></li>
+				<li class="layer cloud1" data-depth="0.9"></li>
+				<li class="layer city-front2" data-depth="1.1"></li>
+				<li class="layer city-front1" data-depth="1.5"></li>	
+				<!--snow-->
+				<li class="layer city-snow" data-depth="0.4"><canvas class="snow"></canvas></li>
+			</ul>
+			
+			<!--snow Scripts-->
+			<script type="text/javascript">
+				  $(document).ready( function() {
+						$("canvas.snow").let_it_snow({
+						    speed: 0,					//速度 0-5，默认0						    
+						    interaction: true,			//交互，默认true
+						    size: 3,					//平均大小0-10，默认2
+						    count: 400,					//count数量，默认200
+						    opacity: 0,					//平均透明度，0.0-1.0，默认0
+						    color: "#000008",			//颜色，默认"#ffffff"
+						    windPower: 0,				//风吹的方向，左向右为正，默认0
+						    image: false				//图片的URL，默认false
+						});
+				  });
+			</script>					
+			
+			<!--city Scripts-->
+			<script>		
+				// Yep, that's it!
+				$('#city').parallax({
+					  calibrateX: false,
+					  calibrateY: false,
+					  invertX: false,
+					  invertY: false,
+					  limitX: false,
+					  limitY: false,
+					  scalarX: 15,
+					  scalarY: 0,
+					  frictionX: 0.06,
+					  frictionY: 0.06
+				});
+			</script>
 		</div>
 		
 		<div class="page page2">
@@ -183,59 +147,7 @@
 		</div>
 		
 		<div class="page page3">
-			<!--snow-->
-
-	  	
-			<!--city-->
-			<ul id="city" class="city">
-				<li class="layer main-bg" data-depth="0"></li>
-				<li class="layer city-middle" data-depth="0.3"></li>
-				<li class="layer cloud2" data-depth="0.5"></li>
-				<li class="layer city-front3" data-depth="0.7"></li>
-				<li class="layer cloud1" data-depth="0.9"></li>
-				<li class="layer city-front2" data-depth="1.1"></li>
-				<li class="layer city-front1" data-depth="1.5"></li>				
-				<li class="layer city-snow" data-depth="0.4"><canvas class="snow"></canvas></li>
-			</ul>
-			
-
-			<script type="text/javascript">
-				  $(document).ready( function() {
-						$("canvas.snow").let_it_snow({
-						    speed: 0,					//速度 0-5，默认0						    
-						    interaction: true,			//交互，默认true
-						    size: 3,					//平均大小0-10，默认2
-						    count: 400,					//count数量，默认200
-						    opacity: 0,					//平均透明度，0.0-1.0，默认0
-						    color: "#000008",			//颜色，默认"#ffffff"
-						    windPower: 0,				//风吹的方向，左向右为正，默认0
-						    image: false				//图片的URL，默认false
-						});
-				  });
-			</script>			
-			
-			
-			<!--city Scripts-->
-			<script>		
-				// Yep, that's it!
-				$('#city').parallax({
-					  calibrateX: false,
-					  calibrateY: false,
-					  invertX: false,
-					  invertY: false,
-					  limitX: false,
-					  limitY: false,
-					  scalarX: 15,
-					  scalarY: 0,
-					  frictionX: 0.06,
-					  frictionY: 0.06
-				});
-			</script>
-
-		</div>
-				
-		<div class="page page4">
-			
+			<!--naruto-->
 		    <div id="view">
 				<div class="float naruto0">
 			        <div class="oneside side1"></div>
@@ -335,8 +247,21 @@
 			        <div class="oneside side4"></div>
 			        <div class="picture"><img src="images/naruto/40.png"/></div>
 			   </div>
+		    </div>		    
+		</div>
+				
+		<div class="page page4">
+			<!--dice-->
+			<div id="dice">
+				<div class="danmian">
+			        <div class="xiaomian" id="mian1"></div>
+			        <div class="xiaomian" id="mian2"></div>
+			        <div class="xiaomian" id="mian3"></div>
+			        <div class="xiaomian" id="mian4"></div>
+			        <div class="xiaomian" id="mian5"></div>
+			        <div class="xiaomian" id="mian6"></div>
+			   	</div>
 		    </div>
-		    
 		</div>
     </main>
     <footer>   		

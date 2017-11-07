@@ -11,7 +11,7 @@
 		left:-25% !important;z-index: 100;}
 
 
-.city li.city-front1{width: 160%;height: 30%;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/city-front1.png);
+.city li.city-front1{width: 180%;height: 40%;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/city-front1.png);
 		background-size: auto 100%;background-position: bottom center; background-repeat:repeat-x;
 		left:-30% !important;z-index: 102;}
 		

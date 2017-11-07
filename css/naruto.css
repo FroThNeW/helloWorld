@@ -15,7 +15,7 @@ div.float{
     /*漂浮*/
 	position: relative;
     -webkit-animation: floaty 2s ease 1s infinite alternate;
-    -web1kit-animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     
@@ -102,7 +102,6 @@ div.picture{
 }
 div.picture img{
 		position: absolute;
-	    top:50px;
 	    
 	    -webkit-animation: picture 1s ease 0s;
 	    -webkit-animation-fill-mode:forwards;
@@ -116,7 +115,7 @@ div.picture img{
 {
     0%{opacity: 0;width: 0px;height: 0px;}
     
-	100%{opacity: 1;width: 80px;
+	100%{opacity: 1;width: 100px;
         
         -webkit-transform-origin:50% 0 20px;
         transform-origin:50% 0 20px;
