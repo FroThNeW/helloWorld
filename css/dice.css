@@ -1,18 +1,18 @@
-
 div#dice{
-    margin: 300px auto;
-    height: 200px;
-    width: 200px;
-    position: relative;
-    perspective: 150px;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50%; left: 50%;
+	margin-left: -100px; /* (width + padding)/2 */
+	margin-top: -100px; /* (height + padding)/2 */
+    perspective: 800px;
     -webkit-perspective: 800px;
-    perspective-origin: 10% 10%;
-    -webkit-perspective-origin: 50% 50%;
 }
 
 div.danmian{
     /*转动*/
-    -webkit-animation: xuanzhuan 2s ease-out 12s infinite;
+    -webkit-animation: xuanzhuan 12s linear 12s infinite;
+    animation: xuanzhuan 12s linear 12s infinite;
     -web1kit-animation-fill-mode:forwards;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -21,14 +21,14 @@ div.danmian{
 
 @-webkit-keyframes xuanzhuan
 {
-    0%{
-    }
-
-    100%{
-    	perspective-origin: 50% 50%;
-    	-webkit-perspective-origin: 50% 50%;
-        -webkit-transform:rotate3d(0,0,-1,360deg);
-    }
+		0%{
+		}
+		100% {
+        -webkit-transform-origin:0% 0%;
+        transform-origin:0% 0%;
+		-webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg);
+		transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg);
+		}
 }
 
 div.xiaomian{
@@ -36,11 +36,10 @@ div.xiaomian{
     float: left;
     width: 200px;
     height: 200px;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     position: absolute;
     font-family: monospace sans-serif;
     text-align: center;
-
 }
 
 
@@ -48,7 +47,8 @@ div#mian1{
         z-index: 6;
         -webkit-animation: yihao 15s ease 0s;
         -webkit-animation-fill-mode:forwards;
-        background:url(../images/dice/1.png) no-repeat center;
+        background:url(../images/dice/dice1.png) no-repeat center;
+        background-size: contain;
  }
 
 
@@ -56,7 +56,8 @@ div#mian2{
           z-index: 5;
          -webkit-animation: erhao 8s ease 0s;
          -webkit-animation-fill-mode:forwards;
-         background:url(../images/dice/2.png) no-repeat center;
+         background:url(../images/dice/dice2.png) no-repeat center;
+         background-size: contain;
 }
 
 
@@ -65,7 +66,8 @@ div#mian3{
     z-index: 4;
     -webkit-animation: sanhao 9s ease 0s;
     -webkit-animation-fill-mode:forwards;
-    background:url(../images/dice/3.png) no-repeat center;
+    background:url(../images/dice/dice3.png) no-repeat center;
+    background-size: contain;
 
 }
 
@@ -75,7 +77,8 @@ div#mian4{
     z-index: 3;
     -webkit-animation: sihao 10s ease 0s;
     -webkit-animation-fill-mode:forwards;
-    background:url(../images/dice/4.png) no-repeat center;
+    background:url(../images/dice/dice4.png) no-repeat center;
+    background-size: contain;
 }
 
 
@@ -85,7 +88,8 @@ div#mian5{
     z-index: 2;
     -webkit-animation: wuhao 11s ease 0s;
     -webkit-animation-fill-mode:forwards;
-    background:url(../images/dice/5.png) no-repeat center;
+    background:url(../images/dice/dice5.png) no-repeat center;
+    background-size: contain;
 }
 
 
@@ -93,7 +97,8 @@ div#mian6{
     z-index: 1;
     -webkit-animation: liuhao 12s ease 0s;
     -webkit-animation-fill-mode:forwards;
-    background:url(../images/dice/6.png) no-repeat center;
+    background:url(../images/dice/dice6.png) no-repeat center;
+    background-size: contain;
 }
 
 
@@ -102,7 +107,7 @@ div#mian6{
 /*一到六号div动画*/
 @-webkit-keyframes yihao
 {
-    0%{opacity: 1;
+    0%{opacity: 0;
         font-size: 0px;
         line-height: 0px;
         width: 0px;
@@ -119,7 +124,7 @@ div#mian6{
         -o-transform:rotate(-90deg);      	/* Opera */
         transform:rotate(-90deg);
         }
-    30% {opacity: 1;
+    30% {
         font-size: 0px;
         line-height: 0px;
          width: 200px;
@@ -130,7 +135,7 @@ div#mian6{
         -o-transform:rotate(270deg);      	/* Opera */
         transform:rotate(270deg);
         }
-    40% {opacity: 0.5;
+    40% {
        font-size: 100px;
        line-height: 200px;
         width: 200px;
@@ -145,7 +150,7 @@ div#mian6{
         }
     50%{
     }
-    60%{opacity: 0.5;
+    60%{
         font-size: 150px;
         line-height: 200px;
         -webkit-transform:rotatey(-90deg); /* Safari �?Chrome */
@@ -162,7 +167,7 @@ div#mian6{
     }
     90%{
     }
-    100%{opacity: 0.5;
+    100%{opacity: 1;
         font-size: 150px;
         line-height: 200px;
         -webkit-transform:rotatey(-90deg); /* Safari �?Chrome */
@@ -177,7 +182,7 @@ div#mian6{
 
 @-webkit-keyframes erhao
 {
-    0%{opacity: 1;
+    0%{opacity: 0;
         font-size: 0px;
         line-height: 0px;
         width: 0px;
@@ -194,7 +199,7 @@ div#mian6{
         -o-transform:rotate(-90deg);      	/* Opera */
         transform:rotate(-90deg);
     }
-    60% {opacity: 1;
+    60% {
         font-size: 0px;
         line-height: 0px;
         width: 200px;
@@ -205,7 +210,7 @@ div#mian6{
         -o-transform:rotate(270deg);      	/* Opera */
         transform:rotate(270deg);
     }
-    80% {opacity: 0.5;
+    80% {
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -220,7 +225,7 @@ div#mian6{
     }
     85%{
     }
-    100%{opacity: 0.5;
+    100%{opacity: 1;
         font-size: 150px;
         line-height: 200px;
         width: 200px;
@@ -238,7 +243,7 @@ div#mian6{
 
 @-webkit-keyframes sanhao
 {
-    0%{opacity: 1;
+    0%{opacity: 0;
         font-size: 0px;
         line-height: 0px;
         width: 0px;
@@ -255,7 +260,7 @@ div#mian6{
         -o-transform:rotate(-90deg);      	/* Opera */
         transform:rotate(-90deg);
     }
-    60% {opacity: 1;
+    60% {
         font-size: 0px;
         line-height: 0px;
         width: 200px;
@@ -266,7 +271,7 @@ div#mian6{
         -o-transform:rotate(270deg);      	/* Opera */
         transform:rotate(270deg);
     }
-    80% {opacity: 0.5;
+    80% {
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -280,7 +285,6 @@ div#mian6{
         transform:rotate(0deg);
     }
     85%{
-        opacity: 0.5;
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -293,7 +297,7 @@ div#mian6{
         -o-transform:rotate(0deg);      	/* Opera */
         transform:rotate(0deg);
     }
-    100%{opacity: 0.5;
+    100%{opacity: 1;
         font-size: 150px;
         line-height: 200px;
         width: 200px;
@@ -312,7 +316,7 @@ div#mian6{
 
 @-webkit-keyframes sihao
 {
-    0%{opacity: 1;
+    0%{opacity: 0;
         font-size: 0px;
         line-height: 0px;
         width: 0px;
@@ -329,7 +333,7 @@ div#mian6{
         -o-transform:rotate(-90deg);      	/* Opera */
         transform:rotate(-90deg);
     }
-    60% {opacity: 1;
+    60% {
         font-size: 0px;
         line-height: 0px;
         width: 200px;
@@ -340,7 +344,7 @@ div#mian6{
         -o-transform:rotate(270deg);      	/* Opera */
         transform:rotate(270deg);
     }
-    80% {opacity: 0.5;
+    80% {
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -354,7 +358,6 @@ div#mian6{
         transform:rotate(0deg);
     }
     85%{
-        opacity: 0.5;
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -367,7 +370,7 @@ div#mian6{
         -o-transform:rotate(0deg);      	/* Opera */
         transform:rotate(0deg);
     }
-    100%{opacity: 0.5;
+    100%{opacity: 1;
         font-size: 150px;
         line-height: 200px;
         width: 200px;
@@ -385,7 +388,7 @@ div#mian6{
 
 @-webkit-keyframes wuhao
 {
-    0%{opacity: 1;
+    0%{opacity: 0;
         font-size: 0px;
         line-height: 0px;
         width: 0px;
@@ -402,7 +405,7 @@ div#mian6{
         -o-transform:rotate(-90deg);      	/* Opera */
         transform:rotate(-90deg);
     }
-    60% {opacity: 1;
+    60% {
         font-size: 0px;
         line-height: 0px;
         width: 200px;
@@ -413,7 +416,7 @@ div#mian6{
         -o-transform:rotate(270deg);      	/* Opera */
         transform:rotate(270deg);
     }
-    80% {opacity: 0.5;
+    80% {
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -427,7 +430,6 @@ div#mian6{
         transform:rotate(0deg);
     }
     85%{
-        opacity: 0.5;
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -440,7 +442,7 @@ div#mian6{
         -o-transform:rotate(0deg);      	/* Opera */
         transform:rotate(0deg);
     }
-    100%{opacity: 0.5;
+    100%{opacity: 1;
         font-size: 150px;
         line-height: 200px;
         width: 200px;
@@ -460,7 +462,7 @@ div#mian6{
 
 @-webkit-keyframes liuhao
 {
-    0%{opacity: 1;
+    0%{opacity: 0;
         font-size: 0px;
         line-height: 0px;
         width: 0px;
@@ -477,7 +479,7 @@ div#mian6{
         -o-transform:rotate(-90deg);      	/* Opera */
         transform:rotate(-90deg);
     }
-    60% {opacity: 1;
+    60% {
         font-size: 0px;
         line-height: 0px;
         width: 200px;
@@ -488,7 +490,7 @@ div#mian6{
         -o-transform:rotate(270deg);      	/* Opera */
         transform:rotate(270deg);
     }
-    80% {opacity: 0.5;
+    80% {
         font-size: 100px;
         line-height: 200px;
         width: 200px;
@@ -502,13 +504,12 @@ div#mian6{
         transform:rotate(0deg);
     }
     85%{
-        opacity: 0.5;
         font-size: 100px;
         line-height: 200px;
         width: 200px;
         height: 200px;
     }
-    100%{opacity: 0.5;
+    100%{opacity: 1;
         font-size: 150px;
         line-height: 200px;
         width: 200px;
