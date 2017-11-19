@@ -4,7 +4,6 @@
 *{padding:0;margin:0;}
 
 /**************************导航********************/
-body{background:url(../images/icon/main-bg.png) repeat repeat;}
 nav{position: absolute;width:100%;/*margin-bottom: 1%;*/height: 16%;}
 
 .page{overflow: hidden;}
