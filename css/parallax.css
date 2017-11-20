@@ -1,8 +1,22 @@
-.devil{display:block;margin:auto;padding:0;position: absolute;
+ul.devil{display:block;margin:auto;padding:0;position: absolute;
 		left: 0;right: 0;top: 0;bottom: 0;    	
     	/*border: 1px solid #521E18;*/
     	height: 100%;}
     	
-.devil li{display: block;width:100%;height: 100%;text-align: center;}
+ul.devil li{display: block;width:100%;height: 100%;text-align: center;}
 
-.devil li img{height: 100%;}
+ul.devil li div{width:1000px;height: 100%;margin: 0 auto;background:url(../images/devil/devil.png) no-repeat;}
+
+div#devil-shan2{background-position:0px 0px;}
+div#devil-shan1{background-position:-1000px 0px;}
+div#devil-flash1{background-position:-2000px 0px;}
+div#devil-eay{background-position:-3000px 0px;}
+div#devil-flash2{background-position:-4000px 0px;}
+div#devil-mouse{background-position:-5000px 0px;}
+div#devil-earl{background-position:-6000px 0px;}
+div#devil-earr{background-position:0px -1000px;}
+div#devil-face{background-position:-1000px -1000px;}
+div#devil-ba{background-position:-2000px -1000px;}
+div#devil-you{background-position:-3000px -1000px;}
+div#devil-di{background-position:-4000px -1000px;}
+div#devil-xian{background-position:-5000px -1000px;}

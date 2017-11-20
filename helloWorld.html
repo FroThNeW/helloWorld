@@ -13,15 +13,15 @@
 <!--响应式-->
 <!--<link rel="stylesheet" type="text/css" href="css/media.css" />-->
 <!--全屏滚动样式样式-->
-<link rel="stylesheet" href="css/onepage-scroll.css" />
+<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
 <!--视差-->	
 <link rel="stylesheet" type="text/css" href="css/parallax.css"/>
 <!--city-->
 <link rel="stylesheet" type="text/css" href="css/city.css"/>
 <!--naruto-->
-<link rel="stylesheet" href="css/naruto.css"/>
+<link rel="stylesheet" type="text/css" href="css/naruto.css"/>
 <!--dice-->
-<link rel="stylesheet" href="css/dice.css"/>
+<link rel="stylesheet" type="text/css" href="css/dice.css"/>
 
 <!--主jquery-1.9.0--> 
 <script src="js/jquery-1.9.0.min.js"></script>
@@ -111,19 +111,19 @@
 		<div class="page page2">
 			<!--devil视差-->
 			<ul id="devil" class="devil">
-				<li class="layer" data-depth="0.1"><img src="images/devil/di.png"></li>
-				<li class="layer" data-depth="0.1"><img src="images/devil/xian.png"></li>
-				<li class="layer" data-depth="0.2"><img src="images/devil/shan2.png"></li>
-				<li class="layer" data-depth="0.2"><img src="images/devil/shan1.png"></li>	
-				<li class="layer" data-depth="0.3"><img src="images/devil/face.png"></li>							
-				<li class="layer" data-depth="0.35"><img src="images/devil/earl.png"></li>
-				<li class="layer" data-depth="0.35"><img src="images/devil/earr.png"></li>
-				<li class="layer" data-depth="0.4"><img src="images/devil/eay.png"></li>
-				<li class="layer" data-depth="0.4"><img src="images/devil/mouse.png"></li>
-				<li class="layer" data-depth="0.36"><img src="images/devil/flash2.png"></li>
-				<li class="layer" data-depth="0.35"><img src="images/devil/flash1.png"></li>
-				<li class="layer" data-depth="0.4"><img src="images/devil/ba.png"></li>
-				<li class="layer" data-depth="0.4"><img src="images/devil/you.png"></li>
+				<li class="layer" data-depth="0.1"><div id="devil-di"></div></li>
+				<li class="layer" data-depth="0.1"><div id="devil-xian"></div></li>
+				<li class="layer" data-depth="0.2"><div id="devil-shan2"></div></li>
+				<li class="layer" data-depth="0.2"><div id="devil-shan1"></div></li>	
+				<li class="layer" data-depth="0.3"><div id="devil-face"></div></li>
+				<li class="layer" data-depth="0.35"><div id="devil-earl"></div></li>
+				<li class="layer" data-depth="0.35"><div id="devil-earr"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-eay"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-mouse"></div></li>
+				<li class="layer" data-depth="0.36"><div id="devil-flash2"></div></li>
+				<li class="layer" data-depth="0.35"><div id="devil-flash1"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-ba"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-you"></div></li>
 			</ul>
 			<!--devil视差Scripts-->
 			<script>		
@@ -140,8 +140,16 @@
 					  frictionX: 0.1,		//跟随速度
 					  frictionY: 0.1		
 				});
+				
+				
+//				$('li.layer div').css('width',$('li.layer div').css('height'));
+////				$(window).resize(function(){
+////					$('li.layer div').css('width',$('li.layer div').css('height'));
+////				})
+						
+				
 				// 禁止图片拖拽
-				$('#devil li img').attr({ondragstart:"return false",oncontextmenu:"return false"});
+				$('#devil li').attr({ondragstart:"return false",oncontextmenu:"return false"});
 			</script>	
 		</div>
 		
