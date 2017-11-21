@@ -10,8 +10,6 @@
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
 <!--主CSS-->
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<!--响应式-->
-<!--<link rel="stylesheet" type="text/css" href="css/media.css" />-->
 <!--全屏滚动样式样式-->
 <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
 <!--视差-->	
@@ -22,6 +20,8 @@
 <link rel="stylesheet" type="text/css" href="css/naruto.css"/>
 <!--dice-->
 <link rel="stylesheet" type="text/css" href="css/dice.css"/>
+<!--响应式-->
+<link rel="stylesheet" type="text/css" href="css/media.css" />
 
 <!--主jquery-1.9.0--> 
 <script src="js/jquery-1.9.0.min.js"></script>
@@ -63,15 +63,14 @@
 		<div class="page page1">
 			<!--city-->
 			<ul id="city" class="city">
-				<li class="layer main-bg" data-depth="0"></li>
+				<!--snow-->
+				<li class="layer city-snow" data-depth="0"><canvas class="snow"></canvas></li>
 				<li class="layer city-middle" data-depth="0.3"></li>
 				<li class="layer cloud2" data-depth="0.5"></li>
 				<li class="layer city-front3" data-depth="0.7"></li>
 				<li class="layer cloud1" data-depth="0.9"></li>
 				<li class="layer city-front2" data-depth="1.1"></li>
-				<li class="layer city-front1" data-depth="1.5"></li>	
-				<!--snow-->
-				<li class="layer city-snow" data-depth="0.4"><canvas class="snow"></canvas></li>
+				<li class="layer city-front1" data-depth="1.5"></li>
 			</ul>
 			
 			<!--snow Scripts-->
@@ -81,7 +80,7 @@
 						    speed: 0,					//速度 0-5，默认0						    
 						    interaction: true,			//交互，默认true
 						    size: 3,					//平均大小0-10，默认2
-						    count: 400,					//count数量，默认200
+						    count: 200,					//count数量，默认200
 						    opacity: 0,					//平均透明度，0.0-1.0，默认0
 						    color: "#000008",			//颜色，默认"#ffffff"
 						    windPower: 0,				//风吹的方向，左向右为正，默认0
@@ -142,10 +141,10 @@
 				});
 				
 				
-//				$('li.layer div').css('width',$('li.layer div').css('height'));
-////				$(window).resize(function(){
-////					$('li.layer div').css('width',$('li.layer div').css('height'));
-////				})
+				$('li.layer div').css('width',$('li.layer div').css('height'));
+				$(window).resize(function(){
+					$('li.layer div').css('width',$('li.layer div').css('height'));
+				})
 						
 				
 				// 禁止图片拖拽

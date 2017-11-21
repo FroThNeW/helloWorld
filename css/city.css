@@ -2,34 +2,30 @@
 
 .city li{display:block;width: 100%;}
 
-.city li.main-bg{position: absolute;background-image:url(../images/city/main-bg.png);
-		background-size: auto 100%; background-repeat: repeat repeat;z-index: 99;}
-		
-
-.city li.city-middle{width: 150%;height: 60%;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/city-middle.png);
-		background-size: auto 100%;background-position: bottom center; background-repeat: repeat-x;
+.city li.city-middle{width: 150%;height: 258px;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/cityall.png);
+		background-position: bottom center; background-repeat: repeat-x;background-position:0px 0px;
 		left:-25% !important;z-index: 100;}
 
 
-.city li.city-front1{width: 180%;height: 40%;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/city-front1.png);
-		background-size: auto 100%;background-position: bottom center; background-repeat:repeat-x;
+.city li.city-front1{width: 180%;height: 150px;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/cityall.png);
+		background-position: bottom center; background-repeat:repeat-x;background-position:0px -258px;
 		left:-30% !important;z-index: 102;}
 		
-.city li.city-front2{width: 160%;height: 20%;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/city-front2.png);
-		background-size: auto 100%;background-position: bottom center; background-repeat:repeat-x;
+.city li.city-front2{width: 160%;height: 150px;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/cityall.png);
+		background-position: bottom center; background-repeat:repeat-x;background-position:0px -408px;
 		left:-30% !important;z-index: 102;}
 		
-.city li.city-front3{width: 160%;height: 40%;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/city-front3.png);
-		background-size: auto 100%;background-position: bottom center; background-repeat:repeat-x;
+.city li.city-front3{width: 160%;height: 200px;position: absolute;bottom: 0;top:auto !important;background-image:url(../images/city/cityall.png);
+		background-position: bottom center; background-repeat:repeat-x;background-position:0px -558px;
 		left:-30% !important;z-index: 102;}
 		
 		
-.city li.cloud1{width:180% ;height:15% ;position: absolute;background-image:url(../images/city/cloud1.png);
-		background-size: auto 100%;background-position:center; background-repeat:repeat-x;z-index: 102;
+.city li.cloud1{width:180% ;height: 58px;position: absolute;background-image:url(../images/city/cityall.png);
+		background-position:center; background-repeat:repeat-x;z-index: 102;background-position:0px -758px;
 		top:30% !important;left: -40% !important;}
 		
-.city li.cloud2{width:160% ;height:12% ;position: absolute;background-image:url(../images/city/cloud2.png);
-		background-size: auto 100%;background-position:center; background-repeat:repeat-x;z-index: 102;
+.city li.cloud2{width:160% ;height: 63px;position: absolute;background-image:url(../images/city/cityall.png);
+		background-position:center; background-repeat:repeat-x;z-index: 102;background-position:0px -816px;
 		top:10% !important;left: -30% !important;}
 
 
@@ -37,5 +33,5 @@
 
 
 
-.city li.city-snow{width: 130%;height: 100%;z-index: 101;position: absolute;left:-15% !important;}
+.city li.city-snow{width: 100%;height: 100%;z-index: 101;position: absolute;}
 .city li.city-snow .snow{width:100%;}
