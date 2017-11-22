@@ -124,16 +124,7 @@ div#naruto14{background-position:-600px -200px;}
     0%{opacity: 0;width: 0px;height: 0px;}
     
 	100%{opacity: 1;width: 100px;height: 200px;
-        
-        -webkit-transform-origin:50% 0 20px;
-        transform-origin:50% 0 20px;
-        
-        -webkit-transform:rotatey(180deg); /* Safari �?Chrome */
-        -ms-transform:rotatey(180deg); 	/* IE 9 */
-        -moz-transform:rotatey(180deg); 	/* Firefox */
-        -o-transform:rotatey(180deg);      	/* Opera */
-        transform:rotatey(180deg);
-        
+
     }
 }
 
