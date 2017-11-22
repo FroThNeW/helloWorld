@@ -3,9 +3,8 @@ ul.devil{display:block;margin:auto;padding:0;position: absolute;
     	/*border: 1px solid #521E18;*/
     	height: 100%;}
     	
-ul.devil li{display: block;width:100%;height: 100%;text-align: center;}
-
-ul.devil li div{width:1000px;height: 100%;margin: 0 auto;background:url(../images/devil/devil.png) no-repeat;}
+ul.devil li{display: block;width:100%;height: 1000px;text-align: center;}
+ul.devil li div{height: 100%;margin: 0 auto;background:url(../images/devil/devil.png) no-repeat;}
 
 div#devil-shan2{background-position:0px 0px;}
 div#devil-shan1{background-position:-1000px 0px;}
