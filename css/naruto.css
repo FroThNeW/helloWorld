@@ -124,6 +124,7 @@ div#naruto14{background-position:-600px -200px;}
     0%{opacity: 0;width: 0px;height: 0px;}
     
 	100%{opacity: 1;width: 100px;height: 200px;
+		transform: translatez(50px);
 
     }
 }
