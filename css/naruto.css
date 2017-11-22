@@ -14,7 +14,7 @@ div#view{
 div.float{
     /*漂浮*/
 	position: relative;
-    -webkit-animation: floaty 2s ease 1s infinite alternate;
+    -webkit-animation: floaty 2s ease 2.5s infinite alternate;
     -webkit-animation-fill-mode:forwards;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -56,37 +56,37 @@ div.oneside{
 
 div.side1{
 		z-index: 6;
-		-webkit-animation: one 1s ease 0s;
+		-webkit-animation: one 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
  }
 
 div.side2{
 		z-index: 5;
-		-webkit-animation: two 1s ease 0s;
+		-webkit-animation: two 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
 }
 
 div.side3{
 		z-index: 4;
-		-webkit-animation: three 1s ease 0s;
+		-webkit-animation: three 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
 }
 
 div.side4{
 		z-index: 3;
-		-webkit-animation: four 1s ease 0s;
+		-webkit-animation: four 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
 }
 
 div.side5{
 	    z-index: 2;
-	    -webkit-animation: five 1s ease 0s;
+	    -webkit-animation: five 2s ease 0s;
 	    -webkit-animation-fill-mode:forwards;
 }
 
 div.side6{
 	    z-index: 1;
-	    -webkit-animation: six 1s ease 0s;
+	    -webkit-animation: six 2s ease 0s;
 	    -webkit-animation-fill-mode:forwards;
 }
 
@@ -97,7 +97,7 @@ div.picture{
 	    bottom: 0;
 		background:url(../images/naruto/naruto.png) no-repeat;
 	    
-	    -webkit-animation: picture 1s ease 0s;
+	    -webkit-animation: picture 1s ease 1.5s;
 	    -webkit-animation-fill-mode:forwards;
 }
 
