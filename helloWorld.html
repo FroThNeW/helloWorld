@@ -13,13 +13,13 @@
 <!--全屏滚动样式样式-->
 <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
 <!--视差-->	
-<link rel="stylesheet" type="text/css" href="css/parallax.css"/>
+<link rel="stylesheet" type="text/css" href="css/devil.css"/>
 <!--city-->
 <link rel="stylesheet" type="text/css" href="css/city.css"/>
 <!--naruto-->
-<link rel="stylesheet" type="text/css" href="css/naruto.css"/>
+<!--<link rel="stylesheet" type="text/css" href="css/naruto.css"/>-->
 <!--dice-->
-<link rel="stylesheet" type="text/css" href="css/dice.css"/>
+<!--<link rel="stylesheet" type="text/css" href="css/dice.css"/>-->
 <!--响应式-->
 <link rel="stylesheet" type="text/css" href="css/media.css" />
 
@@ -31,34 +31,12 @@
 <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
 <!--city-->
 <script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
-
+<!--2017.11.26--onepage启动-->
+<script type="text/javascript" src="js/jquery.onepage-scroll-animation.js"></script>
 
 </head>
 
 <body ondragstart="return false" oncontextmenu="return false">
-	<!--onepage启动-->
-	<script type="text/javascript">
-		$(function(){
-			$('main').onepage_scroll({
-				sectionContainer: '.page',
-				direction: 'horizontal',
-				animationTime: 500,
-		//		responsiveFallback: 600
-		//		pagination: false
-				loop: true,
-				updateURL: true,
-				beforeMove: function(index){
-							switch(index){
-								case 1:
-								case 2:
-								case 3:
-								case 4:
-							}
-						}
-		 
-					});
-				});		
-	</script>
     <main>
 		<div class="page page1">
 			<!--city-->

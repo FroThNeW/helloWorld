@@ -3,7 +3,7 @@ div#view{
 	width: 84%;
 	height: 90%;
     margin: 0 auto;
-    padding: 5% 8%;
+    padding: 10% 8%;
     position: relative;
     perspective: 1200px;
     -webkit-perspective: 1200px;
@@ -14,7 +14,7 @@ div#view{
 div.float{
     /*漂浮*/
 	position: relative;
-    -webkit-animation: floaty 2s ease 2.5s infinite alternate;
+    -webkit-animation: floaty 2s ease-in 2.5s infinite alternate;
     -webkit-animation-fill-mode:forwards;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
