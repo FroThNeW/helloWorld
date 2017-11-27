@@ -1,5 +1,16 @@
-$(function(){
-　　var sHash = window.location.hash;									//取当前页面地址#及后面的值
+$(window).load(function(){
+	
+//使原有的加载等待动画隐藏。
+$(".progress").css("opacity","0");
+
+	
+	
+	
+	
+	
+//以下是实现在onepage插件中，初次进入未知的某一page中，设置实现元素弹出效果。
+
+　　	var sHash = window.location.hash;										//取当前页面地址#及后面的值
 	var sHashnumber = sHash.substr(1,1);								//本吊成功取到了当前页面的值的纯数字部分
 	
 	if (sHashnumber=="5" || sHashnumber=="") {
@@ -20,34 +31,26 @@ $(function(){
 		});		
 	};	
 	if (sHashnumber=="3") {
-		$("<link>")														//创建添加css文件
-		.attr({ rel: "stylesheet",
-		type: "text/css",
-		href: "css/naruto.css"
-		})
-		.appendTo("head");	
-	};
+		$("#narutoview div.float").each(function(){
+			$(this).addClass("scani")									//添加动画类名
+		});		
+	};	
 	if (sHashnumber=="4") {
-		$("<link>")														//创建添加css文件
-		.attr({ rel: "stylesheet",
-		type: "text/css",
-		href: "css/dice.css"
-		})
-		.appendTo("head");	
-	};
-
-});
+		$("#dice div.danmian").each(function(){
+			$(this).addClass("scani")									//添加动画类名
+		});		
+	};	
 
 
+//以下是调用开启JQ单页滚动插件的必须函数，写在这里是为了配合每一页元素弹出动画效果的实现.并且,window.onload = function(){}只能执行一次,所以和上一模块写在一起.
 
-$(function(){
 	$('main').onepage_scroll({
 		sectionContainer: '.page',
 		easing: "ease-in-out",
 		direction: 'horizontal',
 		animationTime: 1000,
-//		responsiveFallback: 600
-//		pagination: false
+//		responsiveFallback: 600,
+//		pagination: false,
 		loop: false,
 		updateURL: true,
 		beforeMove: function(index){
@@ -55,7 +58,7 @@ $(function(){
 						case 1:
 							if (!($(".city li").is('.scani'))) {
 								$(".city li").each(function(){
-									$(this).addClass("scani");								//添加动画类名
+									$(this).addClass("scani");									//添加动画类名
 								});
 							};
 						break;
@@ -63,31 +66,24 @@ $(function(){
 						case 2:
 							if (!($(".devil li div").is('.scani'))) {
 								$(".devil li div").each(function(){
-									$(this).addClass("scani");								//添加动画类名
+									$(this).addClass("scani");									//添加动画类名
 								});
 							};
 						break;
 							
 						case 3:
-							if ($(".picture").css("position")!="absolute") {
-								$("<link>")														//创建添加css文件
-								.attr({ rel: "stylesheet",
-								type: "text/css",
-								href: "css/naruto.css"
-								})
-								.appendTo("head");	
+							if (!($("#narutoview div.float").is('.scani'))) {
+								$("#narutoview div.float").each(function(){
+									$(this).addClass("scani")									//添加动画类名
+								});	
 							};
 						break;
 							
 						case 4:
-							if ($("#dice").css("width")!="200px") {
-								console.log(1);
-								$("<link>")														//创建添加css文件
-								.attr({ rel: "stylesheet",
-								type: "text/css",
-								href: "css/dice.css"
-								})
-								.appendTo("head");	
+							if (!($("#dice div.danmian").is('.scani'))) {								
+								$("#dice div.danmian").each(function(){
+									$(this).addClass("scani")									//添加动画类名
+								});	
 							};
 						break;
 							
@@ -95,4 +91,10 @@ $(function(){
 				}
    
 	});
+
+
 });
+
+
+
+//window.onload = function(){}

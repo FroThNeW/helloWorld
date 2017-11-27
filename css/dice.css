@@ -11,17 +11,21 @@ div#dice{
 }
 
 div.danmian{
+
+    width: 200px;
+    height: 200px;
+    -webkit-transform-origin:50% 50% 100px;
+    transform-origin:50% 50% 100px;
+}
+div.danmian.scani{
     /*转动*/
     -webkit-animation: xuanzhuan 6s ease-in-out 9.5s infinite;
     animation: xuanzhuan 12s ease-in-out 9.5s infinite;
     -webkit-animation-fill-mode:forwards;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    width: 200px;
-    height: 200px;
-    -webkit-transform-origin:50% 50% 100px;
-    transform-origin:50% 50% 100px;
 }
+
 
 @-webkit-keyframes xuanzhuan
 {
@@ -44,12 +48,12 @@ div.danmian{
 
 div.xiaomian{float: left;position: absolute;background:url(../images/dice/dice.png) no-repeat;}
 
-div#mian1{-webkit-animation: yihao 2s ease 1.5s;-webkit-animation-fill-mode:forwards;background-position:0px 0px;}
-div#mian2{-webkit-animation: erhao 2s ease 6s;-webkit-animation-fill-mode:forwards;background-position:-200px 0px;}
-div#mian3{-webkit-animation: sanhao 2s ease 4.5s;-webkit-animation-fill-mode:forwards;background-position:-400px 0px;}
-div#mian4{-webkit-animation: sihao 2s ease 3s;-webkit-animation-fill-mode:forwards;background-position:0px -200px;}
-div#mian5{-webkit-animation: wuhao 2s ease 7.5s;-webkit-animation-fill-mode:forwards;background-position:-200px -200px;}
-div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animation-fill-mode:forwards;background-position:-400px -200px;}
+div.danmian.scani div#mian1{-webkit-animation: yihao 2s ease 1.5s;-webkit-animation-fill-mode:forwards;background-position:0px 0px;}
+div.danmian.scani div#mian2{-webkit-animation: erhao 2s ease 6s;-webkit-animation-fill-mode:forwards;background-position:-200px 0px;}
+div.danmian.scani div#mian3{-webkit-animation: sanhao 2s ease 4.5s;-webkit-animation-fill-mode:forwards;background-position:-400px 0px;}
+div.danmian.scani div#mian4{-webkit-animation: sihao 2s ease 3s;-webkit-animation-fill-mode:forwards;background-position:0px -200px;}
+div.danmian.scani div#mian5{-webkit-animation: wuhao 2s ease 7.5s;-webkit-animation-fill-mode:forwards;background-position:-200px -200px;}
+div.danmian.scani div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animation-fill-mode:forwards;background-position:-400px -200px;}
 
 
 

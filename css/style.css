@@ -3,23 +3,18 @@
 /*clear*/
 *{padding:0;margin:0;}
 
-/**************************导航********************/
-nav{position: absolute;width:100%;/*margin-bottom: 1%;*/height: 16%;}
+
+body{background:url(../images/icon/bg0.png) repeat repeat;}
+
+
 
 .page{overflow: hidden;}
 
-
+/*
 .page1{background:url(../images/icon/bg1.png) repeat repeat;}
 .page2{background:url(../images/icon/bg2.png) repeat repeat;}
 .page3{background:url(../images/icon/bg3.png) repeat repeat;}
-.page4{background:url(../images/icon/bg4.png) repeat repeat;}
+.page4{background:url(../images/icon/bg4.png) repeat repeat;}*/
 
 
 
-/************************底部开始*************************/
-footer{
-}
-div.clear{clear:both}
-div.new{margin:0 auto;height:100px;background-color:#0FF;}
-
-/************************底部结束*************************/

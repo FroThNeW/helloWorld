@@ -6,73 +6,24 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>pencil</title>
-
-<style>
-/* PROGRESS */
-.progress {
-	display: block;
-  	float: left;
-	z-index: 9999;
-  	background-color: #e5e9eb;
-  	width: 100%;
-  	height: 0.25em;
-  	position: relative;
-}
-.progress-bar {
-  animation-duration: 3s;
-  animation-name: width;
-  background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
-  background-size: 100% 0.25em;
-  height: 100%;
-  position: relative;
-}
-.progress-shadow {
-  background-image: linear-gradient(to bottom, #eaecee, transparent);
-  height: 4em;
-  position: absolute;
-  top: 100%;
-  transform: skew(45deg);
-  transform-origin: 0 0;
-  width: 100%;
-}
-
-/* ANIMATIONS */
-@keyframes width {
-  0%, 100% {
-    transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85);
-  }
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-</style>
-
-<script type="text/javascript" src="js/prefixfree.min.js"></script>
-
-<!--PROGRESS end-->
-
-
 <!--初始化-->
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
 <!--主CSS-->
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!--全屏滚动样式样式-->
 <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
-<!--视差-->	
-<link rel="stylesheet" type="text/css" href="css/devil.css"/>
 <!--city-->
 <link rel="stylesheet" type="text/css" href="css/city.css"/>
+<!--视差-->	
+<link rel="stylesheet" type="text/css" href="css/devil.css"/>
 <!--naruto-->
-<!--<link rel="stylesheet" type="text/css" href="css/naruto.css"/>-->
+<link rel="stylesheet" type="text/css" href="css/naruto.css"/>
 <!--dice-->
-<!--<link rel="stylesheet" type="text/css" href="css/dice.css"/>-->
+<link rel="stylesheet" type="text/css" href="css/dice.css"/>
 <!--响应式-->
 <link rel="stylesheet" type="text/css" href="css/media.css" />
 
-<!--主jquery-1.9.0--> 
+<!--主jquery-1.9.0-->
 <script src="js/jquery-1.9.0.min.js"></script>
 <!--全屏滚动-->
 <script src="js/jquery.onepage-scroll.min.js"></script>
@@ -86,9 +37,9 @@
 </head>
 
 <body ondragstart="return false" oncontextmenu="return false">
-	<div class="progress">
-		<div class="progress-bar">
-			<div class="progress-shadow"></div>
+	<div class="progress" style="transition: all 1s;-webkit-transition: all 1s;">
+		<div style="background-color: antiquewhite;width: 100%;height: 100%;position: absolute;">
+			加载中！！！
 		</div>
 	</div>
 	
@@ -187,104 +138,104 @@
 		
 		<div class="page page3">
 			<!--naruto-->
-		    <div id="view">
+		    <div id="narutoview">
 				<div class="float naruto1">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto1"></div>
+			        <div class="narutopicture" id="narutopicture1"></div>
 			   	</div>
 				<div class="float naruto2">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto2"></div>
+			        <div class="narutopicture" id="narutopicture2"></div>
 			   	</div>
 				<div class="float naruto3">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto3"></div>
+			        <div class="narutopicture" id="narutopicture3"></div>
 			   	</div>
 				<div class="float naruto4">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto4"></div>
+			        <div class="narutopicture" id="narutopicture4"></div>
 			   	</div>
 				<div class="float naruto5">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto5"></div>
+			        <div class="narutopicture" id="narutopicture5"></div>
 			   	</div>
 				<div class="float naruto6">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto6"></div>
+			        <div class="narutopicture" id="narutopicture6"></div>
 			   	</div>
 				<div class="float naruto7">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto7"></div>
+			        <div class="narutopicture" id="narutopicture7"></div>
 			   	</div>
 				<div class="float naruto8">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto8"></div>
+			        <div class="narutopicture" id="narutopicture8"></div>
 			   	</div>
 				<div class="float naruto9">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto9"></div>
+			        <div class="narutopicture" id="narutopicture9"></div>
 			   	</div>
 				<div class="float naruto10">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto10"></div>
+			        <div class="narutopicture" id="narutopicture10"></div>
 			   	</div>
 				<div class="float naruto11">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto11"></div>
+			        <div class="narutopicture" id="narutopicture11"></div>
 			   	</div>
 				<div class="float naruto12">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto12"></div>
+			        <div class="narutopicture" id="narutopicture12"></div>
 			   	</div>
 				<div class="float naruto13">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto13"></div>
+			        <div class="narutopicture" id="narutopicture13"></div>
 			   	</div>
 				<div class="float naruto14">
 			        <div class="oneside side1"></div>
 			        <div class="oneside side2"></div>
 			        <div class="oneside side3"></div>
 			        <div class="oneside side4"></div>
-			        <div class="picture" id="naruto14"></div>
+			        <div class="narutopicture" id="narutopicture14"></div>
 			   </div>
 		    </div>		    
 		</div>

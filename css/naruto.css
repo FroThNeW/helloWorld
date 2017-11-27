@@ -1,5 +1,5 @@
 
-div#view{
+div#narutoview{
 	width: 84%;
 	height: 90%;
     margin: 0 auto;
@@ -14,13 +14,15 @@ div#view{
 div.float{
     /*漂浮*/
 	position: relative;
-    -webkit-animation: floaty 2s ease-in 2.5s infinite alternate;
-    -webkit-animation-fill-mode:forwards;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    
     width: 12%;
 }
+div.float.scani{
+	-webkit-animation: floaty 2s ease-in 2.5s infinite alternate;
+    -webkit-animation-fill-mode:forwards;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;   
+}
+
 
 div.naruto1{top:0;left: 0;}
 div.naruto2{top:0;left: 15%;}
@@ -54,72 +56,62 @@ div.oneside{
 }
 
 
-div.side1{
+div.float.scani div.side1{
 		z-index: 6;
 		-webkit-animation: one 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
  }
 
-div.side2{
+div.float.scani div.side2{
 		z-index: 5;
 		-webkit-animation: two 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
 }
 
-div.side3{
+div.float.scani div.side3{
 		z-index: 4;
 		-webkit-animation: three 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
 }
 
-div.side4{
+div.float.scani div.side4{
 		z-index: 3;
 		-webkit-animation: four 2s ease 0s;
 		-webkit-animation-fill-mode:forwards;
 }
 
-div.side5{
-	    z-index: 2;
-	    -webkit-animation: five 2s ease 0s;
-	    -webkit-animation-fill-mode:forwards;
-}
-
-div.side6{
-	    z-index: 1;
-	    -webkit-animation: six 2s ease 0s;
-	    -webkit-animation-fill-mode:forwards;
-}
-
-div.picture{
+div.narutopicture{
 		position: absolute;
 	    z-index: 7;
 	    top: 0;
 	    bottom: 0;
-		background:url(../images/naruto/naruto.png) no-repeat;
-	    
-	    -webkit-animation: picture 1s ease 1.5s;
-	    -webkit-animation-fill-mode:forwards;
+		background:url(../images/naruto/naruto.png) no-repeat;	   
+}
+div.float.scani div.narutopicture{
+	    -webkit-animation: narutopicture 1s ease 1.5s;
+	    -webkit-animation-fill-mode:forwards;	
 }
 
-div#naruto1{background-position:0px 0px;}
-div#naruto2{background-position:-100px 0px;}
-div#naruto3{background-position:-200px 0px;}
-div#naruto4{background-position:-300px 0px;}
-div#naruto5{background-position:-400px 0px;}
-div#naruto6{background-position:-500px 0px;}
-div#naruto7{background-position:-600px 0px;}
-div#naruto8{background-position:0px -200px;}
-div#naruto9{background-position:-100px -200px;}
-div#naruto10{background-position:-200px -200px;}
-div#naruto11{background-position:-300px -200px;}
-div#naruto12{background-position:-400px -200px;}
-div#naruto13{background-position:-500px -200px;}
-div#naruto14{background-position:-600px -200px;}
+
+div#narutopicture1{background-position:0px 0px;}
+div#narutopicture2{background-position:-100px 0px;}
+div#narutopicture3{background-position:-200px 0px;}
+div#narutopicture4{background-position:-300px 0px;}
+div#narutopicture5{background-position:-400px 0px;}
+div#narutopicture6{background-position:-500px 0px;}
+div#narutopicture7{background-position:-600px 0px;}
+div#narutopicture8{background-position:0px -200px;}
+div#narutopicture9{background-position:-100px -200px;}
+div#narutopicture10{background-position:-200px -200px;}
+div#narutopicture11{background-position:-300px -200px;}
+div#narutopicture12{background-position:-400px -200px;}
+div#narutopicture13{background-position:-500px -200px;}
+div#narutopicture14{background-position:-600px -200px;}
 
 
 
 /*picture动画*/
-@-webkit-keyframes picture
+@-webkit-keyframes narutopicture
 {
     0%{opacity: 0;width: 0px;height: 0px;}
     
