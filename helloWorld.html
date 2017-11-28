@@ -6,6 +6,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>pencil</title>
+<!--先加载动画-->
+<link rel="stylesheet" type="text/css" href="css/plane.css"/>
 <!--初始化-->
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
 <!--主CSS-->
@@ -30,19 +32,53 @@
 <!--视差-->
 <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
 <!--city-->
-<script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+<script type="text/javascript" src="js/jquery.let_it_snow.min.js"></script>
 <!--2017.11.26--onepage启动-->
-<script type="text/javascript" src="js/jquery.onepage-scroll-animation.js"></script>
+<script type="text/javascript" src="js/jquery.onepage-scroll-animation.min.js"></script>
 
 </head>
 
 <body ondragstart="return false" oncontextmenu="return false">
-	<div class="progress" style="transition: all 1s;-webkit-transition: all 1s;">
-		<div style="background-color: antiquewhite;width: 100%;height: 100%;position: absolute;">
-			加载中！！！
+	<!--纯css3加载动画-->
+	<div id="progress">
+		<div class="cloud cloud-a">
+			<div class="line-a"></div>
+			<div class="line-b"></div>
+			<div class="line-c"></div>
+			<div class="line-d"></div>
+			<div class="line-e"></div>
+		</div>		
+		<div class="plane">
+			<div class="wings">
+				<div class="fan">
+					<div class="fan-wings">
+						<div class="fan-a"></div>
+						<div class="fan-b"></div>
+						<div class="fan-c"></div>
+						<div class="fan-d"></div>
+					</div>
+				</div>
+				<div class="cat">
+					<div class="legs"></div>
+				</div>
+			</div>
+			<div class="wheel">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+		</div>		
+		<div class="cloud cloud-b">
+			<div class="line-a"></div>
+			<div class="line-b"></div>
+			<div class="line-c"></div>
+			<div class="line-d"></div>
+			<div class="line-e"></div>
 		</div>
 	</div>
+	<!--纯css3加载动画-->
 	
+	
+
     <main>
 		<div class="page page1">
 			<!--city-->
@@ -50,7 +86,7 @@
 				<!--snow-->
 				<li class="layer city-snow" data-depth="0"><canvas class="snow"></canvas></li>
 				<li class="layer city-middle" data-depth="0.3"></li>
-				<li class="layer cloud2" data-depth="0.5"></li>
+				<li class="layer cloud2" data-depth="0.1"></li>
 				<li class="layer city-front3" data-depth="0.7"></li>
 				<li class="layer cloud1" data-depth="0.9"></li>
 				<li class="layer city-front2" data-depth="1.1"></li>

@@ -1,31 +1,31 @@
 .city{display:block;position:absolute;left:0;top:0;/*border: 1px solid #521E18;*/width:100%;height: 100%;}
 
-.city li{display:block;width: 100%;}
+.city li.layer:not(:first-child){display:block;background-image:url(../images/city/cityall.png);}
 
-.city li.city-middle{width: 150%;height: 258px;position: absolute;bottom: -258px;top:auto !important;background-image:url(../images/city/cityall.png);
-		background-position: bottom center; background-repeat: repeat-x;background-position:0px 0px;
+.city li.city-middle{width: 150%;height: 258px;position: absolute;bottom: -258px;top:auto !important;
+		background-repeat: repeat-x;background-position:0px 0px;
 		left:-25% !important;z-index: 100;}
 
-.city li.city-front1{width: 180%;height: 150px;position: absolute;bottom: -150px;top:auto !important;background-image:url(../images/city/cityall.png);
-		background-position: bottom center; background-repeat:repeat-x;background-position:0px -258px;
+.city li.city-front1{width: 180%;height: 150px;position: absolute;bottom: -150px;top:auto !important;
+		background-repeat:repeat-x;background-position:0px -258px;
 		left:-30% !important;z-index: 102;}
 	
-.city li.city-front2{width: 160%;height: 150px;position: absolute;bottom: -150px;top:auto !important;background-image:url(../images/city/cityall.png);
-		background-position: bottom center; background-repeat:repeat-x;background-position:0px -408px;
+.city li.city-front2{width: 160%;height: 150px;position: absolute;bottom: -150px;top:auto !important;
+		background-repeat:repeat-x;background-position:0px -408px;
 		left:-30% !important;z-index: 102;}
 		
-.city li.city-front3{width: 160%;height: 200px;position: absolute;bottom: -200px;top:auto !important;background-image:url(../images/city/cityall.png);
-		background-position: bottom center; background-repeat:repeat-x;background-position:0px -558px;
+.city li.city-front3{width: 160%;height: 200px;position: absolute;bottom: -200px;top:auto !important;
+		background-repeat:repeat-x;background-position:0px -558px;
 		left:-30% !important;z-index: 102;}
 		
 		
-.city li.cloud1{width:180% ;height: 58px;position: absolute;background-image:url(../images/city/cityall.png);
-		background-position:center; background-repeat:repeat-x;z-index: 102;background-position:0px -758px;
+.city li.cloud1{width:180% ;height: 63px;position: absolute;
+		background-repeat:repeat-x;z-index: 102;background-position:0px -758px;
 		top:30% !important;left: -40% !important;}
 		
-.city li.cloud2{width:160% ;height: 63px;position: absolute;background-image:url(../images/city/cityall.png);
-		background-position:center; background-repeat:repeat-x;z-index: 102;background-position:0px -816px;
-		top:10% !important;left: -30% !important;}
+.city li.cloud2{width:100% ;height: 170px;position: absolute;
+		background-repeat:no-repeat;z-index: 102;background-position:0px -821px;
+		top:8% !important;left: 15% !important;}
 
 
 

@@ -1,11 +1,12 @@
 $(window).load(function(){
 	
 //使原有的加载等待动画隐藏。
-$(".progress").css("opacity","0");
+$("#progress").fadeTo(3000,0);
+var timeout=setTimeout(function () {
+        $("#progress").css("display","none");
+		}, 3000);
 
-	
-	
-	
+
 	
 	
 //以下是实现在onepage插件中，初次进入未知的某一page中，设置实现元素弹出效果。

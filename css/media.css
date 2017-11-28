@@ -6,7 +6,7 @@
 @media only screen and (max-height: 900px) {
 	ul.devil{height: 900px;}
 	ul.devil li{display: block;width:100%;height: 900px;text-align: center;}
-	ul.devil li div{height: 100%;margin: 0 auto;background:url(../images/devil/devil01.png) no-repeat;}
+	ul.devil li div{height: 100%;margin: 0 auto;background:url(../images/devil/devil.png) no-repeat;}
 	
 	div#devil-shan2{background-position:0px 0px;}
 	div#devil-shan1{background-position:-900px 0px;}
