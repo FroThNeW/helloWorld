@@ -8,6 +8,7 @@ div#dice{
     perspective:1000px;
     -webkit-perspective: 1000px;
     perspective-origin: 80% 80%;
+    -webkit-perspective-origin: 80% 80%;
 }
 
 div.danmian{
@@ -19,14 +20,43 @@ div.danmian{
 }
 div.danmian.scani{
     /*转动*/
-    -webkit-animation: xuanzhuan 6s ease-in-out 9.5s infinite;
-    animation: xuanzhuan 12s ease-in-out 9.5s infinite;
+    -webkit-animation: xuanzhuan 6s ease-in-out 6.5s infinite;
+    animation: xuanzhuan 12s ease-in-out 6.5s infinite;
+    -moz-animation: xuanzhuan 12s ease-in-out 6.5s infinite;
+    -o-animation: xuanzhuan 12s ease-in-out 6.5s infinite;
+    -ms-animation: xuanzhuan 12s ease-in-out 6.5s infinite;
+    
+    animation-fill-mode:forwards;
     -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    -ms-animation-fill-mode:forwards;
+    
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
 }
 
-
+@keyframes xuanzhuan
+{
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotatez(0deg); 
+    }
+	25%{
+		transform: rotateX(180deg) rotateY(180deg) rotatez(180deg);		
+	}
+	50%{
+		transform: rotateX(360deg) rotateY(300deg) rotatez(360deg);		
+	}	
+	75%{
+		transform: rotateX(500deg) rotateY(420deg) rotatez(540deg);
+	}		
+    100% {
+        transform: rotateX(720deg) rotateY(720deg) rotatez(720deg);
+    }
+}
 @-webkit-keyframes xuanzhuan
 {
     0% {
@@ -48,16 +78,97 @@ div.danmian.scani{
 
 div.xiaomian{float: left;position: absolute;background:url(../images/dice/dice.png) no-repeat;}
 
-div.danmian.scani div#mian1{-webkit-animation: yihao 2s ease 1.5s;-webkit-animation-fill-mode:forwards;background-position:0px 0px;}
-div.danmian.scani div#mian2{-webkit-animation: erhao 2s ease 6s;-webkit-animation-fill-mode:forwards;background-position:-200px 0px;}
-div.danmian.scani div#mian3{-webkit-animation: sanhao 2s ease 4.5s;-webkit-animation-fill-mode:forwards;background-position:-400px 0px;}
-div.danmian.scani div#mian4{-webkit-animation: sihao 2s ease 3s;-webkit-animation-fill-mode:forwards;background-position:0px -200px;}
-div.danmian.scani div#mian5{-webkit-animation: wuhao 2s ease 7.5s;-webkit-animation-fill-mode:forwards;background-position:-200px -200px;}
-div.danmian.scani div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animation-fill-mode:forwards;background-position:-400px -200px;}
+div.danmian.scani div#mian1{
+animation: yihao 2s ease 1.5s;
+-moz-animation: yihao 2s ease 1.5s;
+-webkit-animation: yihao 2s ease 1.5s;
+-o-animation: yihao 2s ease 1.5s;
+-ms-animation: yihao 2s ease 1.5s;
+
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+background-position:0px 0px;}
+
+div.danmian.scani div#mian2{
+animation: erhao 2s ease 3s;
+-moz-animation: erhao 2s ease 3s;
+-webkit-animation: erhao 2s ease 3s;
+-o-animation: erhao 2s ease 3s;
+-ms-animation: erhao 2s ease 3s;
+
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+background-position:-200px 0px;}
+
+div.danmian.scani div#mian3{
+animation: sanhao 2s ease 1.5s;
+-moz-animation: sanhao 2s ease 1.5s;
+-webkit-animation: sanhao 2s ease 1.5s;
+-o-animation: sanhao 2s ease 1.5s;
+-ms-animation: sanhao 2s ease 1.5s;
+
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+background-position:-400px 0px;}
+
+div.danmian.scani div#mian4{
+animation: sihao 2s ease 3s;
+-moz-animation: sihao 2s ease 3s;
+-webkit-animation: sihao 2s ease 3s;
+-o-animation: sihao 2s ease 3s;
+-ms-animation: sihao 2s ease 3s;
+
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+background-position:0px -200px;}
+
+div.danmian.scani div#mian5{
+animation: wuhao 2s ease 4.5s;
+-moz-animation: wuhao 2s ease 4.5s;
+-webkit-animation: wuhao 2s ease 4.5s;
+-o-animation: wuhao 2s ease 4.5s;
+-ms-animation: wuhao 2s ease 4.5s;
+
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+background-position:-200px -200px;}
+
+div.danmian.scani div#mian6{
+animation: liuhao 2s ease 0s;
+-moz-animation: liuhao 2s ease 0s;
+-webkit-animation: liuhao 2s ease 0s;
+-o-animation: liuhao 2s ease 0s;
+-ms-animation: liuhao 2s ease 0s;
+
+animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards;
+background-position:-400px -200px;}
 
 
 
 /*一到六号div动画*/
+@keyframes yihao
+{
+    0%{opacity: 0;
+        width: 0px;
+        height: 0px;
+        }
+	50%{
+		width: 200px;
+        height: 200px;
+	}
+    100%{opacity: 1;
+        width: 200px;
+        height: 200px;
+        -webkit-transform:rotatey(-90deg); /* Safari �?Chrome */
+        -ms-transform:rotatey(-90deg); 	/* IE 9 */
+        -moz-transform:rotatey(-90deg); 	/* Firefox */
+        -o-transform:rotatey(-90deg);      	/* Opera */
+        transform:rotatey(-90deg);
+        -webkit-transform-origin:0% 50%;
+        transform-origin:0% 50%;
+    }
+}
 @-webkit-keyframes yihao
 {
     0%{opacity: 0;
@@ -81,6 +192,28 @@ div.danmian.scani div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animati
     }
 }
 
+@keyframes erhao
+{
+    0%{opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+	50%{
+		width: 200px;
+        height: 200px;
+	}
+    100%{opacity: 1;
+        width: 200px;
+        height: 200px;
+        -webkit-transform-origin:50% 100%;
+        transform-origin:50% 100%;
+        -webkit-transform:rotatex(-90deg); /* Safari �?Chrome */
+        -ms-transform:rotatex(-90deg); 	/* IE 9 */
+        -moz-transform:rotatex(-90deg); 	/* Firefox */
+        -o-transform:rotatex(-90deg);      	/* Opera */
+        transform:rotatex(-90deg);
+    }
+}
 @-webkit-keyframes erhao
 {
     0%{opacity: 0;
@@ -104,7 +237,28 @@ div.danmian.scani div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animati
     }
 }
 
-
+@keyframes sanhao
+{
+    0%{opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+	50%{
+		width: 200px;
+        height: 200px;
+	}
+    100%{opacity: 1;
+        width: 200px;
+        height: 200px;
+        -webkit-transform-origin:100% 50%;
+        transform-origin:100% 50%;
+        -webkit-transform:rotatey(90deg); /* Safari �?Chrome */
+        -ms-transform:rotatey(90deg); 	/* IE 9 */
+        -moz-transform:rotatey(90deg); 	/* Firefox */
+        -o-transform:rotatey(90deg);      	/* Opera */
+        transform:rotatey(90deg);
+    }
+}
 @-webkit-keyframes sanhao
 {
     0%{opacity: 0;
@@ -128,6 +282,28 @@ div.danmian.scani div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animati
     }
 }
 
+@keyframes sihao
+{
+    0%{opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+	50%{
+		width: 200px;
+        height: 200px;
+	}
+    100%{opacity: 1;
+        width: 200px;
+        height: 200px;
+        -webkit-transform-origin:50% 0%;
+        transform-origin:50% 0%;
+        -webkit-transform:rotatex(90deg); /* Safari �?Chrome */
+        -ms-transform:rotatex(90deg); 	/* IE 9 */
+        -moz-transform:rotatex(90deg); 	/* Firefox */
+        -o-transform:rotatex(90deg);      	/* Opera */
+        transform:rotatex(90deg);
+    }
+}
 @-webkit-keyframes sihao
 {
     0%{opacity: 0;
@@ -152,6 +328,35 @@ div.danmian.scani div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animati
 }
 
 
+@keyframes wuhao
+{
+    0%{opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+	50%{
+        width: 200px;
+        height: 200px;		
+		-webkit-transform-origin:50% 50%;
+        transform-origin:50% 50%;
+		-webkit-transform:rotatex(180deg); /* Safari �?Chrome */
+        -ms-transform:rotatex(180deg); 	/* IE 9 */
+        -moz-transform:rotatex(180deg); 	/* Firefox */
+        -o-transform:rotatex(180deg);      	/* Opera */
+        transform:rotatex(180deg);		
+	}
+    100%{opacity: 1;
+        width: 200px;
+        height: 200px;
+        -webkit-transform-origin:50% 100%;
+        transform-origin:50% 100%;
+        -webkit-transform:translateZ(200px); /* Safari �?Chrome */
+        -ms-transform:translateZ(200px); 	/* IE 9 */
+        -moz-transform:translateZ(200px); 	/* Firefox */
+        -o-transform:translateZ(200px);      	/* Opera */
+        transform:translateZ(200px);
+    }
+}
 @-webkit-keyframes wuhao
 {
     0%{opacity: 0;
@@ -184,7 +389,28 @@ div.danmian.scani div#mian6{-webkit-animation: liuhao 2s ease 0s;-webkit-animati
 
 
 
-
+@keyframes liuhao
+{
+    0%{opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+	50%{
+		width: 200px;
+        height: 200px;
+	}
+    100%{opacity: 1;
+        width: 200px;
+        height: 200px;
+        -webkit-transform-origin:50% 50%;
+        transform-origin:50% 50%;
+        -webkit-transform:rotatey(180deg); /* Safari �?Chrome */
+        -ms-transform:rotatey(180deg); 	/* IE 9 */
+        -moz-transform:rotatey(180deg); 	/* Firefox */
+        -o-transform:rotatey(180deg);      	/* Opera */
+        transform:rotatey(180deg);
+    }
+}
 @-webkit-keyframes liuhao
 {
     0%{opacity: 0;
